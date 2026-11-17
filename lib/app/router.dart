@@ -6,6 +6,8 @@ import '../features/ai_assistant/presentation/assistant_routes.dart';
 import '../features/ai_assistant/presentation/screens/assistant_hub_screen.dart';
 import '../features/auth/presentation/auth_routes.dart';
 import '../features/home/presentation/screens/home_screen.dart';
+import '../features/jobs/presentation/jobs_routes.dart';
+import '../features/jobs/presentation/screens/jobs_hub_screen.dart';
 import '../features/profile/presentation/profile_routes.dart';
 import '../features/profile/presentation/screens/profile_screen.dart';
 import 'not_found_screen.dart';
@@ -58,11 +60,8 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: Routes.jobs,
-                builder: (_, _) => const TabPlaceholderScreen(
-                  title: 'Jobs',
-                  task: 'Task 1.4',
-                  icon: Icons.work_outline_rounded,
-                ),
+                builder: (_, _) => const JobsHubScreen(),
+                routes: jobsRoutes,
               ),
             ],
           ),
