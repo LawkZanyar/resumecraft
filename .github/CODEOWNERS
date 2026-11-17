@@ -1,0 +1,33 @@
+# Owners follow the role table in the master prompt (A.6).
+# Replace the placeholders with each member's GitHub username.
+
+# Member 1: Lawk Zaniar - platform, security, shared files
+*                               @LAWK_GITHUB_USERNAME
+/lib/app/                       @LAWK_GITHUB_USERNAME
+/lib/core/                      @LAWK_GITHUB_USERNAME
+/lib/shared/domain/             @LAWK_GITHUB_USERNAME
+/lib/features/auth/             @LAWK_GITHUB_USERNAME
+/lib/features/profile/          @LAWK_GITHUB_USERNAME
+/lib/features/vault/            @LAWK_GITHUB_USERNAME
+/lib/features/notifications/    @LAWK_GITHUB_USERNAME
+/firestore/                     @LAWK_GITHUB_USERNAME
+/android/                       @LAWK_GITHUB_USERNAME
+/pubspec.yaml                   @LAWK_GITHUB_USERNAME
+/.github/                       @LAWK_GITHUB_USERNAME
+
+# Member 2: Pasha Mariwan - resumes, PDF, scanner
+/lib/features/resume/           @PASHA_GITHUB_USERNAME
+/lib/features/scanner/          @PASHA_GITHUB_USERNAME
+/lib/features/home/             @LAWK_GITHUB_USERNAME @PASHA_GITHUB_USERNAME
+
+# Member 3: Hananeh Mohsen - AI, assistant, voice, interview
+/lib/features/ai/               @HANANEH_GITHUB_USERNAME
+/lib/features/ai_assistant/     @HANANEH_GITHUB_USERNAME
+/lib/features/voice/            @HANANEH_GITHUB_USERNAME
+/lib/features/interview/        @HANANEH_GITHUB_USERNAME
+
+# Member 4: Fatemeh Kamal - jobs, proxy, tracker
+/lib/features/jobs/             @FATEMEH_GITHUB_USERNAME
+/lib/features/applications/     @FATEMEH_GITHUB_USERNAME
+/proxy/                         @FATEMEH_GITHUB_USERNAME
+/scripts/                       @FATEMEH_GITHUB_USERNAME
