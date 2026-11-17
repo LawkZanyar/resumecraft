@@ -10,6 +10,8 @@ import '../features/jobs/presentation/jobs_routes.dart';
 import '../features/jobs/presentation/screens/jobs_hub_screen.dart';
 import '../features/profile/presentation/profile_routes.dart';
 import '../features/profile/presentation/screens/profile_screen.dart';
+import '../features/resume/presentation/resume_routes.dart';
+import '../features/resume/presentation/screens/resume_list_screen.dart';
 import 'not_found_screen.dart';
 import 'routes.dart';
 import 'shell/main_shell.dart';
@@ -37,11 +39,8 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: Routes.resumes,
-                builder: (_, _) => const TabPlaceholderScreen(
-                  title: 'My Resumes',
-                  task: 'Task 1.2',
-                  icon: Icons.description_outlined,
-                ),
+                builder: (_, _) => const ResumeListScreen(),
+                routes: resumeRoutes,
               ),
             ],
           ),
