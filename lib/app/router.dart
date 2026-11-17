@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../features/ai_assistant/presentation/assistant_routes.dart';
+import '../features/ai_assistant/presentation/screens/assistant_hub_screen.dart';
 import '../features/auth/presentation/auth_routes.dart';
 import '../features/home/presentation/screens/home_screen.dart';
 import '../features/profile/presentation/profile_routes.dart';
@@ -46,11 +48,8 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: Routes.assistant,
-                builder: (_, _) => const TabPlaceholderScreen(
-                  title: 'AI Career Assistant',
-                  task: 'Task 1.3',
-                  icon: Icons.auto_awesome_outlined,
-                ),
+                builder: (_, _) => const AssistantHubScreen(),
+                routes: assistantRoutes,
               ),
             ],
           ),
